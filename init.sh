@@ -12,3 +12,6 @@ cd chia-blockchain
 
 chmod +x ./install.sh
 sh install.sh
+
+. ./activate
+chia init
