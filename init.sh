@@ -2,7 +2,7 @@
 
 apt update
 apt upgrade -y
-apt install git software-properties-common -y
+apt install git software-properties-common iotop htop -y
 add-apt-repository -y ppa:jgmath2000/et
 apt update
 apt install et -y
