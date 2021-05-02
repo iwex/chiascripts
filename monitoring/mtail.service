@@ -1,0 +1,13 @@
+[Unit]
+Description=Mtail Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Type=simple
+Restart=on-failure
+ExecStart=/root/ChiaMonitor/mtail  --progs /root/ChiaMonitor/ --logs /root/.chia/mainnet/log/debug.log --logs /root/farmer_summary.log --poll_interval 3000ms
+
+[Install]
+WantedBy=multi-user.target

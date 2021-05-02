@@ -1,0 +1,9 @@
+[Unit]
+Description=Watch Farm Timer
+
+[Timer]
+OnActiveSec=30
+OnUnitActiveSec=30
+
+[Install]
+WantedBy=timers.target
