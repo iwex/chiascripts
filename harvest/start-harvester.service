@@ -1,0 +1,8 @@
+[Unit]
+After=network.service
+
+[Service]
+ExecStart=/root/chia-blockchain/venv/bin/chia start harvester
+
+[Install]
+WantedBy=default.target
