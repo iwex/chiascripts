@@ -24,6 +24,7 @@ chia init -c /root/ca
 
 sed -i 's/\*self_hostname/136.243.104.155/' /root/.chia/mainnet/config/config.yaml
 sed -i 's/enable_upnp: True/enable_upnp: False/' /root/.chia/mainnet/config/config.yaml
+sed -i 's/log_level: "WARNING"/log_level: "INFO"/' /root/.chia/mainnet/config/config.yaml
 
 wget -O /root/chia-blockchain/venv/lib/python3.8/site-packages/chiapos.cpython-38-x86_64-linux-gnu.so https://raw.githubusercontent.com/iwex/chiascripts/main/ecopool/chiapos.cpython-38-x86_64-linux-gnu.so
 
