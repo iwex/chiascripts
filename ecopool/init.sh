@@ -13,7 +13,7 @@ chia init
 pip install --force-reinstall git+https://github.com/ericaltendorf/plotman@main
 plotman config generate
 
-cd ..
+cd /root
 mkdir ca
 wget -O /root/ca/chia_ca.crt https://raw.githubusercontent.com/iwex/chiascripts/main/ecopool/chia_ca.crt
 wget -O /root/ca/chia_ca.key https://raw.githubusercontent.com/iwex/chiascripts/main/ecopool/chia_ca.key
