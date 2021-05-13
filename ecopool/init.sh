@@ -4,8 +4,8 @@ apt update
 apt upgrade -y
 apt install git software-properties-common iotop htop -y
 
-git clone https://github.com/Chia-Network/chia-blockchain.git --recurse-submodules
-cd chia-blockchain
+git clone https://github.com/Chia-Network/chia-blockchain.git --recurse-submodules /root/chia-blockchain
+cd /root/chia-blockchain
 chmod +x ./install.sh
 sh install.sh
 . ./activate
