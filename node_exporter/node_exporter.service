@@ -1,0 +1,13 @@
+[Unit]
+Description=node exporter Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Type=simple
+Restart=on-failure
+ExecStart=/root/ChiaMonitor/node_exporter
+
+[Install]
+WantedBy=multi-user.target
