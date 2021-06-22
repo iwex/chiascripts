@@ -8,5 +8,5 @@ wget -O /etc/systemd/system/node_exporter.service https://raw.githubusercontent.
 
 systemctl daemon-reload
 
-systemctl enable dashboard
-systemctl start dashboard
+systemctl enable node_exporter
+systemctl start node_exporter
