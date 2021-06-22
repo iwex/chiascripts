@@ -1,0 +1,13 @@
+[Unit]
+Description=dashaboard
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Type=simple
+Restart=on-failure
+ExecStart=/usr/bin/chia-dashboard-satellite
+
+[Install]
+WantedBy=multi-user.target
